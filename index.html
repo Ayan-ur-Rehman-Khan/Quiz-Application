@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./brain.png" type="image/png" />
+</head>
+
+<body>
+    <div id="start-screen" class="quiz-box">
+        <h1 class="game-title">🧠 Welcome to the Quiz!</h1>
+        <p style="margin-bottom: 20px;">Test your knowledge in this short quiz.</p>
+        <button onclick="startQuiz()">🚀 Start Quiz</button>
+    </div>
+    <div id="quiz-container" class="quiz-box" style="display: none;">
+        <h1 class="game-title">🧠 IQ Test</h1>
+        <div class="question-box">
+            <h2 id="question">Question appears here</h2>
+        </div>
+        <div id="options" class="options"></div>
+        <div class="controls">
+            <button id="nextBtn" onclick="incrementQuestion()" disabled>▶ Next</button>
+            <button id="finishQuiz" onclick="finishQuiz()" style="display: none;">🏁 Finish</button>
+        </div>
+        <p class="score-text">Score: <span id="quizScore">0</span></p>
+    </div>
+
+    <div id="result-container" class="quiz-box" style="display: none;">
+        <h2 class="game-title">🎉 GAME OVER 🎉</h2>
+        <p>Your final score: <span id="finalScore">0</span></p>
+        <p id="ratingMessage" class="rating"></p>
+
+        <button id="restartQuiz" onclick="restartQuiz()">🔁 Restart</button>
+
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>

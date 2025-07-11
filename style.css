@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #f0f9ff); /* light sky */
+
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+#start-screen button {
+  background-color: #10b981;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#start-screen button:hover {
+  background-color: #059669;
+}
+
+
+.quiz-box {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.game-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #3b82f6;
+}
+
+.question-box {
+  background-color: #f1f5f9;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.option {
+  padding: 12px 20px;
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  color: #111827;
+  text-align: left;
+}
+
+.option:hover {
+  background-color: #d1d5db;
+}
+
+.option.active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.controls button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 5px;
+}
+
+.controls button:hover {
+  background-color: #2563eb;
+}
+
+.controls button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.score-text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #374151;
+}
+
+.rating {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #00ffea;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+button:disabled {
+  background: #64748b;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+.bounce {
+  animation: bounce 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 0 12px #00f2ff, 0 0 24px #00f2ff;
+  transition: 0.3s ease;
+}
+
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(100px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
