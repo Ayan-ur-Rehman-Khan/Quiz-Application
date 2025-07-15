@@ -1,65 +1,107 @@
 const questions = [
-    {
-        id: 1,
-        question: "What is the capital of Pakistan?",
-        options: ["Karachi", "Lahore", "Islamabad", "Multan"],
-        correctAnswer: "Islamabad"
-    },
-    {
-        id: 2,
-        question: "Which animal is known as the king of the jungle?",
-        options: ["Tiger", "Lion", "Elephant", "Leopard"],
-        correctAnswer: "Lion"
-    },
-    {
-        id: 3,
-        question: "How many days are there in a week?",
-        options: [5, 6, 7, 8],
-        correctAnswer: 7
-    },
-    {
-        id: 4,
-        question: "Which planet is known as the Red Planet?",
-        options: ["Mars", "Jupiter", "Earth", "Venus"],
-        correctAnswer: "Mars"
-    },
-    {
-        id: 5,
-        question: "What is the national language of Pakistan?",
-        options: ["Urdu", "Punjabi", "Sindhi", "English"],
-        correctAnswer: "Urdu"
-    },
-    {
-        id: 6,
-        question: "What color do you get when you mix red and yellow?",
-        options: ["Green", "Orange", "Purple", "Blue"],
-        correctAnswer: "Orange"
-    },
-    {
-        id: 7,
-        question: "How many legs does a spider have?",
-        options: [6, 8, 10, 12],
-        correctAnswer: 8
-    },
-    {
-        id: 8,
-        question: "Which fruit is yellow and long?",
-        options: ["Mango", "Banana", "Apple", "Grapes"],
-        correctAnswer: "Banana"
-    },
-    {
-        id: 9,
-        question: "What do we use to write on a blackboard?",
-        options: ["Pen", "Marker", "Chalk", "Pencil"],
-        correctAnswer: "Chalk"
-    },
-    {
-        id: 10,
-        question: "What is H2O commonly known as?",
-        options: ["Salt", "Water", "Sugar", "Oxygen"],
-        correctAnswer: "Water"
-    }
+  {
+    question: "Which of the following best describes a pure function in JavaScript?",
+    options: [
+      "A function that modifies global state",
+      "A function that logs to the console",
+      "A function that returns the same output for the same input without side effects",
+      "A function that changes its input parameters"
+    ],
+    correctAnswer: "A function that returns the same output for the same input without side effects"
+  },
+  {
+    question: "What is the difference between == and === in JavaScript?",
+    options: [
+      "They are identical",
+      "== checks type and value, === checks only value",
+      "== checks only value, === checks value and type",
+      "== is used for assignment, === is used for comparison"
+    ],
+    correctAnswer: "== checks only value, === checks value and type"
+  },
+  {
+    question: "What will be the result of this function call: parseInt('10.5')?",
+    options: ["10.5", "11", "10", "NaN"],
+    correctAnswer: "10"
+  },
+  {
+    question: "How does JavaScript handle variable scope within functions?",
+    options: [
+      "All variables are global",
+      "Variables declared inside functions are function-scoped",
+      "Variables declared with var inside functions are block-scoped",
+      "Functions cannot contain scoped variables"
+    ],
+    correctAnswer: "Variables declared inside functions are function-scoped"
+  },
+  {
+    question: "Which logical operator returns true only if both operands are true?",
+    options: ["||", "&&", "!=", "!"],
+    correctAnswer: "&&"
+  },
+  {
+    question: "What does the typeof operator return for an array?",
+    options: ["object", "array", "list", "undefined"],
+    correctAnswer: "object"
+  },
+  {
+    question: "What will this expression return: Boolean('false')?",
+    options: ["false", "true", "undefined", "null"],
+    correctAnswer: "true"
+  },
+  {
+    question: "Which of the following values is NOT considered falsy in JavaScript?",
+    options: ["0", "\"\"", "null", "[]"],
+    correctAnswer: "[]"
+  },
+  {
+    question: "What is the result of: typeof function(){}?",
+    options: ["object", "function", "undefined", "method"],
+    correctAnswer: "function"
+  },
+  {
+    question: "Which statement best explains the purpose of a return statement in a function?",
+    options: [
+      "It ends the function and sends a value back to the caller",
+      "It pauses the function",
+      "It logs output to the console",
+      "It initializes variables"
+    ],
+    correctAnswer: "It ends the function and sends a value back to the caller"
+  },
+  {
+    question: "How can you ensure a block of code runs only if two conditions are both true?",
+    options: [
+      "Using the || operator",
+      "Using two if statements",
+      "Using the && operator",
+      "Using an else-if block"
+    ],
+    correctAnswer: "Using the && operator"
+  },
+  {
+    question: "What will be the output of: console.log(typeof NaN);",
+    options: ["number", "NaN", "undefined", "object"],
+    correctAnswer: "number"
+  },
+  {
+    question: "Which keyword is used to prevent code from executing if a condition is false?",
+    options: ["break", "else", "continue", "if"],
+    correctAnswer: "if"
+  },
+  {
+    question: "Which statement correctly checks if a variable 'a' is NOT equal to 'b'?",
+    options: ["a != b", "a !== b", "a =! b", "Both A and B"],
+    correctAnswer: "Both A and B"
+  },
+  {
+    question: "What happens when you compare null === undefined?",
+    options: ["true", "false", "TypeError", "NaN"],
+    correctAnswer: "false"
+  }
 ];
+
+
 
 
 let currentQuestion = 0;
