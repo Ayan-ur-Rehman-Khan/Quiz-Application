@@ -174,3 +174,39 @@ button:hover {
   from { transform: translateY(100px); opacity: 0; }
   to   { transform: translateY(0); opacity: 1; }
 }
+
+@media (max-width: 600px) {
+  .quiz-container, .result-container {
+    width: 95%;
+    padding: 20px;
+    border-width: 2px;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2, #question {
+    font-size: 14px;
+  }
+
+  .options {
+    gap: 8px;
+  }
+
+  .option {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .score, .rating {
+    font-size: 12px;
+  }
+}
+
